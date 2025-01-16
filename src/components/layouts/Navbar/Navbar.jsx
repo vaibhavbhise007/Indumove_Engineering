@@ -40,18 +40,18 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-24">
                     {/* Logo and Title */}
-                    <div className="flex items-center">
+                    <div className="flex items-center ">
                         <Link to="/" onClick={handleLinkClick} className="flex items-center">
                             <img src={logo} alt="Logo" className="h-16 w-auto" />
-                            <span className="ml-4 text-lg md:text-xl text-[#d97706] font-semibold">
+                            <span className="ml-4 text-lg md:text-xl text-[#d97706] font-semibold hidden sm:block">
                                 INDUMOVE ENGINEERING AND INDUSTRIES
                             </span>
                         </Link>
                     </div>
 
                     {/* Desktop Menu */}
-                    <div className="hidden md:flex items-center space-x-8">
-                        {["Home", "About", "Services", "Blog", "Contact"].map((item) => (
+                    <div className="hidden md:flex items-center space-x-4">
+                        {["Home", "About", "Services", "Products","Gallery", "Contact"].map((item) => (
                             <Link
                                 key={item}
                                 to={`/${item.toLowerCase()}`}
