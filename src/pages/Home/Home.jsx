@@ -1,9 +1,10 @@
 import HeroSection from "../../components/home/HeroSection";
 import AboutSection from "../../components/home/AboutSection";
-//import FeatureSection from "../../components/home/FeatureSection";
 import BusinessChallenges from "../../components/Home/BusinessChallenges";
 import OurMissionVision from "../../components/Home/OurMissionVision";
 import OurProduct from "../../components/Home/OurProduct";
+import OurServices from "../../components/Home/OurServices";
+
 
 export default function Home() {
     return (
@@ -12,7 +13,9 @@ export default function Home() {
             <AboutSection />
             <BusinessChallenges />
             <OurMissionVision />
+            <OurServices />
             <OurProduct />
+            
             {/* <FeatureSection /> */}
         </div>
     );

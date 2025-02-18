@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { FaPhoneAlt, FaInstagramSquare, FaFacebook, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import logo from "../../../assets/logo.svg";
+import logo from "../../../assets/logo1.png";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +13,7 @@ export default function Navbar() {
     return (
         <nav className="bg-white shadow-md">
             {/* Top Bar */}
-            <div className="hidden md:flex w-full h-10 bg-orange-500 items-center text-white">
+            <div className="hidden md:flex w-full h-10 bg-[#ffd838] items-center text-white">
                 <div className="flex flex-wrap justify-between w-full px-4 md:px-20">
                     {/* Contact Info */}
                     <div className="flex items-center gap-4">
@@ -43,9 +43,9 @@ export default function Navbar() {
                     <div className="flex items-center ">
                         <Link to="/" onClick={handleLinkClick} className="flex items-center">
                             <img src={logo} alt="Logo" className="h-16 w-auto" />
-                            <span className="ml-4 text-lg md:text-xl text-[#d97706] font-semibold hidden sm:block">
+                            {/* <span className="ml-4 text-lg md:text-xl text-[#d97706] font-semibold hidden sm:block">
                                 INDUMOVE ENGINEERING AND INDUSTRIES
-                            </span>
+                            </span> */}
                         </Link>
                     </div>
 

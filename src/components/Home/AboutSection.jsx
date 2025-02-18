@@ -6,7 +6,7 @@ function AboutSection() {
     <section className="flex flex-col lg:flex-row items-center justify-between px-4 md:px-8 lg:px-16 py-8 md:py-12 bg-white gap-8">
       {/* Left Content */}
       <div className="w-full lg:w-1/2 text-center lg:text-left">
-        <p className="text-orange-500 font-bold text-sm md:text-lg uppercase mb-2">
+        <p className="text-[#ffd838] font-bold text-sm md:text-lg uppercase mb-2">
           ABOUT COMPANY
         </p>
         <h2 className="text-2xl md:text-4xl font-bold text-black mb-4 md:mb-6">
@@ -18,7 +18,7 @@ function AboutSection() {
           Our products are in high demand due to their premium quality and affordable prices. Furthermore, we ensure to timely deliver these products to our clients, 
           through this we have gained a huge client base in the market. We also provide Fabrication Service etc.
         </p>
-        <button className="bg-orange-500 text-white px-6 py-3 rounded-md text-sm md:text-lg font-medium hover:bg-sky-600 transition duration-300">
+        <button className="bg-[#ffd838] text-white px-6 py-3 rounded-md text-sm md:text-lg font-medium hover:bg-[#202559] transition duration-300">
           Know More
         </button>
       </div>

@@ -12,7 +12,7 @@ function OurMissionVision() {
                     <h2 className="text-2xl md:text-4xl font-bold text-black mb-4 md:mb-6 text-center md:text-left">
                         Our Vision
                     </h2>
-                    <hr className="my-2 border-orange-500" />
+                    <hr className="my-2 border-[#ffd838]" />
                     <div className=" text-center md:text-left">
                         <p className="text-gray-700  leading-relaxed">
                             To be the foremost provider of innovative, end-to-end supply chain solutions,
@@ -51,7 +51,7 @@ function OurMissionVision() {
                     <h2 className="text-2xl md:text-4xl font-bold text-black mb-4 md:mb-6">
                         Our Mission
                     </h2>
-                    <hr className="my-2 border-orange-500" />
+                    <hr className="my-2 border-[#ffd838]" />
                     <p className="text-gray-700 leading-relaxed">
                         As specialists in comprehensive supply chain management, we empower our customers
                         by managing their end-to-end logistics with expertise and reliability. This allows them to focus on

@@ -17,7 +17,7 @@ function BusinessChallenges() {
       <div className="w-full h-[2px] bg-black my-4"></div>
 
       <div className="flex flex-col items-center text-center">
-        <p className="text-orange-500 font-bold text-lg uppercase mb-2">
+        <p className="text-[#ffd838] font-bold text-lg uppercase mb-2">
           Process
         </p>
         <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -30,7 +30,7 @@ function BusinessChallenges() {
         {/* Left Content */}
         <div className="space-y-4 w-full lg:w-1/2">
           <div
-            className="border border-orange-500 rounded-md p-4 hover:bg-blue-50 transition cursor-pointer"
+            className="border border-[#ffd838] rounded-md p-4 hover:bg-blue-50 transition cursor-pointer"
             onClick={() => handleImageChange(img1)} // Click to display img1
           >
             <h3 className="text-sm md:text-lg font-semibold text-gray-800">
@@ -38,7 +38,7 @@ function BusinessChallenges() {
             </h3>
           </div>
           <div
-            className="border border-orange-500 rounded-md p-4 hover:bg-blue-50 transition cursor-pointer"
+            className="border border-[#ffd838] rounded-md p-4 hover:bg-blue-50 transition cursor-pointer"
             onClick={() => handleImageChange(img2)} // Click to display img2
           >
             <h3 className="text-sm md:text-lg font-semibold text-gray-800">
@@ -46,7 +46,7 @@ function BusinessChallenges() {
             </h3>
           </div>
           <div
-            className="border border-orange-500 rounded-md p-4 hover:bg-blue-50 transition cursor-pointer"
+            className="border border-[#ffd838] rounded-md p-4 hover:bg-blue-50 transition cursor-pointer"
             onClick={() => handleImageChange(img3)} // Click to display img3
           >
             <h3 className="text-sm md:text-lg font-semibold text-gray-800">
@@ -54,7 +54,7 @@ function BusinessChallenges() {
             </h3>
           </div>
           <div
-            className="border border-orange-500 rounded-md p-4 hover:bg-blue-50 transition cursor-pointer"
+            className="border border-[#ffd838] rounded-md p-4 hover:bg-blue-50 transition cursor-pointer"
             onClick={() => handleImageChange(img4)} // Click to display img4
           >
             <h3 className="text-sm md:text-lg font-semibold text-gray-800">

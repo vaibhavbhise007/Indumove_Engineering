@@ -6,7 +6,8 @@ import useSession from "./hooks/Authentication/useSession";
 // Components
 import Home from "./pages/Home/Home";
 import Dashboard from "./pages/Dashboard/Dashboard";
-
+// import Products from "./components/Products/ProductDetail";
+import Card from "./components/ui/Card";
 
 // Authentication components
 import Login from "./pages/Authentication/Login";
@@ -24,6 +25,7 @@ import ToastContainers from "./components/Toast/ToastContainer";
 
 // Loader
 import Loader from "./components/Loader/Loader";
+import ProductDetail from "./components/Products/ProductDetail";
 
 
 export default function App() {
@@ -44,6 +46,8 @@ export default function App() {
   // Main routes for logged-in users
   const mainRoutes = [
     { path: "/", element: <Home /> },
+    { path: "/products", element: <ProductDetail /> },
+    { path: "/product-detail", element: <ProductDetail /> }
     // { path: "/search", element: <SearchPage /> },
     // { path: "/", element: <Schemes /> },
     // { path: "/profile", element: isLoggedIn ? <Profile /> : <Navigate to="/login" /> },
