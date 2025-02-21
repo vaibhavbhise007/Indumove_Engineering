@@ -1,8 +1,45 @@
-# React + Vite
+# Website Frontend
+Indumove_Engineering
+## Project Overview
+This project is the frontend of a website built using modern web technologies. It provides an interactive and responsive user interface.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+- React.js (using Vite)
+- Tailwind CSS
 
-Currently, two official plugins are available:
+## Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/your-repo.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd your-repo
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Usage
+- If using React with Vite, start the development server:
+  ```sh
+  npm run dev
+  ```
+
+## Features
+- Fully responsive design
+- User-friendly UI/UX
+- Interactive elements
+
+## Contributing
+If you'd like to contribute, please fork the repository and submit a pull request.
+
+## License
+This project is licensed under the MIT License.
+
+## Contact
+For any inquiries, reach out to [your-email@example.com](mailto:your-email@example.com).
