@@ -38,8 +38,5 @@ This project is the frontend of a website built using modern web technologies. I
 ## Contributing
 If you'd like to contribute, please fork the repository and submit a pull request.
 
-## License
-This project is licensed under the MIT License.
-
 ## Contact
-For any inquiries, reach out to [your-email@example.com](mailto:your-email@example.com).
+For any inquiries, reach out to [vaibhavrbhise@gmail.com](mailto:your-email@example.com).
