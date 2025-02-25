@@ -10,12 +10,12 @@ function Footer() {
           <div>
             <h3 className="text-xl font-semibold mb-4 text-sky-400">Address</h3>
             <p>Gat no.263, MIDC Rd, near to a Raymond Fasteners India Pvt. Ltd., near Mercedes Benz, Phase III, Industrial Area, </p>
-            <p>Chakan, Pune, Maharashtra 4110501</p>
+            <p>Chakan, Pune, Maharashtra 410501,</p>
             <p>India</p>
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-sky-400">Our Products</h3>
+            <h3 className="text-xl font-semibold mb-4 text-sky-400 ">Our Products</h3>
 
             <div className='flex flex-col-2 gap-4'>
 
