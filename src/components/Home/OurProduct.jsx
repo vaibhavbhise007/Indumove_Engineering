@@ -1,12 +1,12 @@
 import React from 'react'
-import Card from '../../components/ui/Card';
+import ProductCard from '../../components/ui/ProductCard';
 import { useDispatch, useSelector } from "react-redux";
-// import { Carousel } from "@material-tailwind/react";
+
 function OurProduct() {
 
  
   return (
-    <section className='py-10 bg-white md:px-8 lg:px-16'>
+    <section id="products"  className='py-10 bg-white md:px-8 lg:px-16'>
 
       <div className='w-full h-[2px] bg-black '></div>
       <div className='px-4'>
@@ -14,7 +14,7 @@ function OurProduct() {
         <h1 className='text-4xl font-bold text-black'>Our Products</h1>
         
         <div className='pt-8'>
-          <Card />
+          <ProductCard />
         </div>
       </div>
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-scroll"; // Import Link from react-scroll
 import { Menu, X } from "lucide-react";
 import { FaPhoneAlt, FaInstagramSquare, FaFacebook, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -7,11 +7,10 @@ import logo from "../../../assets/logo1.png";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
-    const navigate = useNavigate();
     const handleLinkClick = () => setIsOpen(false);
 
     return (
-        <nav className="bg-white shadow-md">
+        <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
             {/* Top Bar */}
             <div className="hidden md:flex w-full h-10 bg-[#ffd838] items-center text-white">
                 <div className="flex flex-wrap justify-between w-full px-4 md:px-20">
@@ -23,7 +22,7 @@ export default function Navbar() {
                         </div>
                         <div className="flex items-center gap-2">
                             <MdEmail />
-                            <span className="font-semibold">indumoveindustries@gmail.com</span>
+                            <span className="font-semibold">info.indumove.engg@gmail.com</span>
                         </div>
                     </div>
                     {/* Social Media Icons */}
@@ -39,23 +38,23 @@ export default function Navbar() {
             {/* Main Navbar */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-24">
-                    {/* Logo and Title */}
-                    <div className="flex items-center ">
-                        <Link to="/" onClick={handleLinkClick} className="flex items-center">
+                    {/* Logo */}
+                    <div className="flex items-center">
+                        <Link to="home" smooth={true} duration={500} className="cursor-pointer">
                             <img src={logo} alt="Logo" className="h-16 w-auto" />
-                            {/* <span className="ml-4 text-lg md:text-xl text-[#d97706] font-semibold hidden sm:block">
-                                INDUMOVE ENGINEERING AND INDUSTRIES
-                            </span> */}
                         </Link>
                     </div>
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex items-center space-x-4">
-                        {["Home", "About", "Services", "Products","Gallery", "Contact"].map((item) => (
+                        {["Home", "About", "Services", "Products", "Gallery", "Contact"].map((item) => (
                             <Link
                                 key={item}
-                                to={`/${item.toLowerCase()}`}
-                                className="text-black hover:text-sky-400 font-medium px-3 py-2 rounded-md"
+                                to={item.toLowerCase()}
+                                smooth={true}
+                                duration={500}
+                                offset={-80} // Adjust based on your navbar height
+                                className="text-black hover:text-sky-400 font-medium px-3 py-2 rounded-md cursor-pointer"
                                 onClick={handleLinkClick}
                             >
                                 {item}
@@ -80,11 +79,14 @@ export default function Navbar() {
             {isOpen && (
                 <div className="md:hidden bg-white shadow-md">
                     <div className="px-4 pt-4 pb-4 space-y-2">
-                        {["Home", "About", "Services", "Blog", "Contact"].map((item) => (
+                        {["Home", "About", "Services", "Products", "Gallery", "Contact"].map((item) => (
                             <Link
                                 key={item}
-                                to={`/${item.toLowerCase()}`}
-                                className="block text-black hover:text-sky-400 font-medium px-3 py-2 rounded-md"
+                                to={item.toLowerCase()}
+                                smooth={true}
+                                duration={500}
+                                offset={-80}
+                                className="block text-black hover:text-sky-400 font-medium px-3 py-2 rounded-md cursor-pointer"
                                 onClick={handleLinkClick}
                             >
                                 {item}

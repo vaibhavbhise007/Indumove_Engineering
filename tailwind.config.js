@@ -32,6 +32,9 @@ export default {
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
       },
+      fontFamily: {
+        'fira-condensed': ['"Fira Sans Condensed"', 'sans-serif'],
+      },
     },
   },
   darkMode: "class", // Enables dark mode toggle with a class

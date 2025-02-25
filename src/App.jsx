@@ -1,73 +1,33 @@
-
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import useSession from "./hooks/Authentication/useSession";
 
-
 // Components
 import Home from "./pages/Home/Home";
-import Dashboard from "./pages/Dashboard/Dashboard";
-// import Products from "./components/Products/ProductDetail";
-import Card from "./components/ui/Card";
-
-// Authentication components
-import Login from "./pages/Authentication/Login";
-import Signup from "./pages/Authentication/Signup";
-// import ForgotPassword from "./pages/Authentication/ForgotPassword";
-// import VerifyEmail from "./pages/Authentication/VerifyEmail";
-// import ResetPassword from "./pages/Authentication/ResetPassword";
+import ProductDetail from "./components/Products/ProductDetail";
+import ProductCard from "./components/ui/ProductCard";
 
 // Layouts
 import MainLayout from "./layouts/MainLayout";
-import AuthLayout from "./layouts/AuthLayout";
 
-import ToastContainers from "./components/Toast/ToastContainer";
-
-
-// Loader
+// Loader & Toast
 import Loader from "./components/Loader/Loader";
-import ProductDetail from "./components/Products/ProductDetail";
-
+import ToastContainers from "./components/Toast/ToastContainer";
 
 export default function App() {
   const { isLoggedIn, isLoading } = useSession();
-  // Show loader until session is fetched
+
   if (isLoading) return <Loader />;
 
-
-  // Authentication routes
-  const authRoutes = [
-    { path: "/login", element: <Login /> },
-    { path: "/signup", element: <Signup /> },
-    // { path: "/authentication/confirmation/:token", element: <VerifyEmail /> },
-    // { path: "/forgotpassword", element: <ForgotPassword /> },
-    // { path: "/authentication/resetPassword/:token", element: <ResetPassword /> },
-  ];
-
-  // Main routes for logged-in users
+  // Main routes
   const mainRoutes = [
     { path: "/", element: <Home /> },
-    { path: "/products", element: <ProductDetail /> },
-    { path: "/product-detail", element: <ProductDetail /> }
-    // { path: "/search", element: <SearchPage /> },
-    // { path: "/", element: <Schemes /> },
-    // { path: "/profile", element: isLoggedIn ? <Profile /> : <Navigate to="/login" /> },
-    // {
-    //   path: "/profileupdate",
-    //   element: isLoggedIn ? <ProfileUpdate /> : <Navigate to="/login" />,
-    // },
-    // { path: "/about", element: <About /> },
-    // { path: "/services", element: <Services /> },
+    { path: "/products", element: <ProductCard /> }, 
+    { path: "/product-detail", element: <ProductDetail /> }, 
   ];
-
-  // Admin routes (only accessible if logged in as admin)
-  const adminRoutes = [
-    { path: "/dashboard", element: <Dashboard /> },
-  ];
-
 
   // Function to render routes with the specified layout
   const renderRoutes = (layout, routes) => (
-    <Route path={layout.path} element={layout.component}>
+    <Route element={layout.component}>
       {routes.map((route) => (
         <Route key={route.path} path={route.path} element={route.element} />
       ))}
@@ -77,9 +37,8 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {renderRoutes({ path: "", component: <MainLayout /> }, mainRoutes)}
-        {renderRoutes({ path: "", component: <AuthLayout /> }, authRoutes)}
-        {/* {renderRoutes({ path: "", component: <AdminLayout /> }, adminRoutes)} */}
+        {renderRoutes({ component: <MainLayout /> }, mainRoutes)}
+
         {/* Redirect to home if no route is found */}
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

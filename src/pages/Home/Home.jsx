@@ -1,10 +1,10 @@
-import HeroSection from "../../components/home/HeroSection";
-import AboutSection from "../../components/home/AboutSection";
+import HeroSection from "../../components/Home/HeroSection";
+import AboutSection from "../../components/Home/AboutSection";
 import BusinessChallenges from "../../components/Home/BusinessChallenges";
 import OurMissionVision from "../../components/Home/OurMissionVision";
 import OurProduct from "../../components/Home/OurProduct";
 import OurServices from "../../components/Home/OurServices";
-
+import Contact from "../../components/Home/Contact";
 
 export default function Home() {
     return (
@@ -15,7 +15,7 @@ export default function Home() {
             <OurMissionVision />
             <OurServices />
             <OurProduct />
-            
+            <Contact />
             {/* <FeatureSection /> */}
         </div>
     );

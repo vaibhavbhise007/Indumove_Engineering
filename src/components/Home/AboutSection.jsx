@@ -3,7 +3,7 @@ import image from "../../assets/Intro1.jpg";
 
 function AboutSection() {
   return (
-    <section className="flex flex-col lg:flex-row items-center justify-between px-4 md:px-8 lg:px-16 py-8 md:py-12 bg-white gap-8">
+    <section id="about" className="flex flex-col lg:flex-row items-center justify-between  px-4 md:px-8 lg:px-16 py-8 md:py-12 bg-white gap-8">
       {/* Left Content */}
       <div className="w-full lg:w-1/2 text-center lg:text-left">
         <p className="text-[#ffd838] font-bold text-sm md:text-lg uppercase mb-2">

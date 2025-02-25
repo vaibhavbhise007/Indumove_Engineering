@@ -17,7 +17,7 @@ function HeroSection() {
     }, []);
 
     return (
-        <div className=" w-full h-[500px] overflow-hidden top-0">
+        <div id="home" className=" w-full lg:h-[600px]  overflow-hidden pt-16 top-0">
             <Carousel />
         </div>
     );

@@ -46,34 +46,40 @@ const Carousel = () => {
   return (
     <div className="relative w-full h-[500px] overflow-hidden">
       {/* Carousel wrapper */}
-      <div className="relative h-96 w-full overflow-hidden rounded-md md:h-full">
+      <div className="relative h-[500px] w-full overflow-hidden rounded-md md:h-full">
         {images.map((img, index) => (
           <div
             key={index}
-            className={`absolute top-1/2 left-1/2 w-full h-full transform -translate-x-1/2 -translate-y-1/2 transition-opacity duration-1000 ease-in-out ${
-              index === currentIndex ? "opacity-100" : "opacity-0"
-            }`}
+            className={`absolute top-1/2 left-1/2 w-full h-full transform -translate-x-1/2 -translate-y-1/2 transition-opacity duration-1000 ease-in-out ${index === currentIndex ? "opacity-100" : "opacity-0"
+              }`}
           >
             {/* Image */}
             <img
               src={img.src}
-              className="block w-full h-full object-cover opacity-60 transition-opacity duration-1000 ease-in-out"
+              className="block w-full h-[500px] object-cover opacity-60 transition-opacity duration-1000 ease-in-out"
               alt={`Slide ${index + 1}`}
             />
 
             {/* Overlay title */}
             <div
-              className={`absolute pt-18 top-34 md:top-36 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#202559] font-bold text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-center transition-all duration-1000 ${
-                index === currentIndex ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-              }`}
-            >
+              className={`absolute 
+                top-1/2 sm:top-1/2 md:top-36 
+                left-1/2 transform -translate-x-1/2 -translate-y-1/2 
+                text-[#202559] font-bold 
+                text-2xl sm:text-3xl md:text-4xl lg:text-5xl 
+                text-center transition-all duration-1000 
+                ${index === currentIndex ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
+              `}
+                        >
               {img.title}
             </div>
 
-            {/* Overlay text */}
-            <div className="absolute pt-8 top-48 md:bottom-20 left-1/2 transform -translate-x-1/2 text-black font-serif text-xl sm:text-base md:text-xl lg:text-xl text-center px-2 md:px-8">
+
+
+            <div className="absolute pt-8 sm:top-12 md:top-36 lg:top-48 left-1/2 transform -translate-x-1/2 text-black font-serif text-lg sm:text-sm md:text-xl lg:text-2xl text-center px-4 sm:px-6 md:px-8 w-[90%] sm:w-[80%] md:w-auto">
               {img.text}
             </div>
+
           </div>
         ))}
       </div>
@@ -83,9 +89,8 @@ const Carousel = () => {
         {images.map((_, index) => (
           <button
             key={index}
-            className={`w-3 h-3 rounded-full ${
-              index === currentIndex ? "bg-gray-700" : "bg-gray-700"
-            }`}
+            className={`w-3 h-3 rounded-full ${index === currentIndex ? "bg-gray-700" : "bg-gray-200"
+              }`}
             onClick={() => goToSlide(index)}
             aria-label={`Slide ${index + 1}`}
           ></button>
