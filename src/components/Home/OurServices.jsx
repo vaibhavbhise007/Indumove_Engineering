@@ -2,6 +2,7 @@ import React from 'react';
 import s1 from '../../assets/herosection/s1.jpg';
 import s2 from '../../assets/herosection/s2.jpg';
 import s3 from '../../assets/herosection/s3.jpg';
+import s4 from '../../assets/herosection/s4.jpg';
 import s5 from '../../assets/herosection/s5.jpg';
 import s6 from '../../assets/herosection/s6.jpg';
 import s7 from '../../assets/herosection/s7.jpg';
@@ -11,7 +12,7 @@ const services = [
     { img: s1, title: "Design And Development" },
     { img: s3, title: "Manufacturing" },
     { img: s2, title: "Container Packaging" },
-    { img: s2, title: "Fabrication & Engineering Services" },
+    { img: s4, title: "Fabrication & Engineering Services" },
     { img: s5, title: "Supply Chain & Logistics Support" },
     { img: s6, title: "Industrial Relocation" },
     { img: s7, title: "PEB Manufacturing" },

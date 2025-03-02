@@ -54,7 +54,7 @@ function Footer() {
           <div>
             <h3 className="text-xl font-semibold mb-4 text-sky-400">Contact</h3>
             <p>Email: info.indumove.engg@gmail.com</p>
-            <p>Phone: +91 9096352312</p>
+            <p>Phone: +91-9096352312</p>
             <div className="flex space-x-4 mt-4">
               <a href="#" className="text-white hover:text-gray-400">
                 <FaFacebook size={20} />

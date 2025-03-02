@@ -17,11 +17,9 @@ function MainLayout() {
         <div>
             <Navbar />
             <main>
-                {loading ? (
-                    <Loader />
-                ) : (
+                
                     <Outlet />
-                )}
+               
             </main >
             <Footer />
         </div>

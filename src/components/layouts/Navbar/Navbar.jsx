@@ -3,7 +3,7 @@ import { Link } from "react-scroll"; // Import Link from react-scroll
 import { Menu, X } from "lucide-react";
 import { FaPhoneAlt, FaInstagramSquare, FaFacebook, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import logo from "../../../assets/logo1.png";
+import logo from "../../../assets/logo.svg";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -47,7 +47,7 @@ export default function Navbar() {
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex items-center space-x-4">
-                        {["Home", "About", "Services", "Products", "Gallery", "Contact"].map((item) => (
+                        {["Home", "About", "Services", "Products", "Client", "Contact"].map((item) => (
                             <Link
                                 key={item}
                                 to={item.toLowerCase()}
@@ -79,7 +79,7 @@ export default function Navbar() {
             {isOpen && (
                 <div className="md:hidden bg-white shadow-md">
                     <div className="px-4 pt-4 pb-4 space-y-2">
-                        {["Home", "About", "Services", "Products", "Gallery", "Contact"].map((item) => (
+                        {["Home", "About", "Services", "Products", "Client", "Contact"].map((item) => (
                             <Link
                                 key={item}
                                 to={item.toLowerCase()}

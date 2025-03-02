@@ -138,7 +138,7 @@ export default function Contact() {
                                 {
                                     icon: <MapPin className="h-6 w-6 text-[#C5A572] mr-4" />,
                                     title: "Address",
-                                    text: "Kharabhwadi Chakan Khed, Maharashtra, Pune (422501) India",
+                                    text: "Gat no.263, MIDC Rd, near to a Raymond Fasteners India Pvt. Ltd., near Mercedes Benz, Phase III, Industrial Area,Chakan, Pune, Maharashtra 410501, India",
                                 },
                                 {
                                     icon: <Phone className="h-6 w-6 text-[#C5A572] mr-4" />,
@@ -148,7 +148,7 @@ export default function Contact() {
                                 {
                                     icon: <Mail className="h-6 w-6 text-[#C5A572] mr-4" />,
                                     title: "Email",
-                                    text: "indumoveindustries@gmail.com",
+                                    text: "info.indumove.engg@gmail.com",
                                 },
                                 {
                                     icon: <Clock className="h-6 w-6 text-[#C5A572] mr-4" />,

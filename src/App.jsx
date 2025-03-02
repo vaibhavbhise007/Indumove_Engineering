@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import useSession from "./hooks/Authentication/useSession";
+
 
 // Components
 import Home from "./pages/Home/Home";
@@ -10,13 +10,13 @@ import ProductCard from "./components/ui/ProductCard";
 import MainLayout from "./layouts/MainLayout";
 
 // Loader & Toast
-import Loader from "./components/Loader/Loader";
-import ToastContainers from "./components/Toast/ToastContainer";
+
+
 
 export default function App() {
-  const { isLoggedIn, isLoading } = useSession();
+  
 
-  if (isLoading) return <Loader />;
+  
 
   // Main routes
   const mainRoutes = [
@@ -42,7 +42,6 @@ export default function App() {
         {/* Redirect to home if no route is found */}
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-      <ToastContainers />
     </BrowserRouter>
   );
 }

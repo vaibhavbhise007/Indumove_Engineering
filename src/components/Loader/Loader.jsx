@@ -9,14 +9,17 @@ export default function Loader() {
    
 
     <div className="flex items-center justify-center h-screen bg-black">
-      <DNA
+      <h1>loading</h1>
+      {/* <DNA
         visible={true}
         height="100"
         width="100"
         ariaLabel="dna-loading"
         wrapperStyle={{}}
         wrapperClass="dna-wrapper"
-      />
+      /> */}
+
+{/* <span class="loader"></span> */}
     </div>
   );
 }
