@@ -1,13 +1,16 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 
+
 // Components
 import Home from "./pages/Home/Home";
 import ProductDetail from "./components/Products/ProductDetail";
 import ProductCard from "./components/ui/ProductCard";
 
 // Layouts
-import MainLayout from "./layouts/MainLayout";
+import MainLayout from "./layouts/MainLayout.jsx";
+
+
 
 // Loader & Toast
 
