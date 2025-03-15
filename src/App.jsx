@@ -8,7 +8,7 @@ import ProductDetail from "./components/Products/ProductDetail";
 import ProductCard from "./components/ui/ProductCard";
 
 // Layouts
-import MainLayout from "./layouts/MainLayout.jsx";
+import Mainlayouts from "./layouts/Mainlayouts.jsx";
 
 
 
@@ -40,7 +40,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {renderRoutes({ component: <MainLayout /> }, mainRoutes)}
+        {renderRoutes({ component: <Mainlayouts /> }, mainRoutes)}
 
         {/* Redirect to home if no route is found */}
         <Route path="*" element={<Navigate to="/" />} />

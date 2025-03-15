@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import Footer from '../components/layouts/Footer/Footer';
 import Navbar from '../components/layouts/Navbar/Navbar';
 import Loader from '../components/Loader/Loader';
-function MainLayout() {
+function Mainlayouts() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -26,4 +26,4 @@ function MainLayout() {
     );
 }
 
-export default MainLayout;
+export default Mainlayouts;
