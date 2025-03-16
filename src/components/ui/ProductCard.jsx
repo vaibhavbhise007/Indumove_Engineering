@@ -94,7 +94,7 @@ const ProductCard = () => {
     return (
         <div className="relative">
             {/* Mobile Slider */}
-            {/* Mobile Slider */}
+           
             <div id="default-carousel" className="relative w-full sm:hidden">
                 <div className="relative h-[300px] overflow-hidden rounded-lg">
                     {images.map((item, index) => (

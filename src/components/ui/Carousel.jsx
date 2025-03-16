@@ -56,7 +56,7 @@ const Carousel = () => {
             {/* Image */}
             <img
               src={img.src}
-              className="block w-full h-[500px] object-cover opacity-60 transition-opacity duration-1000 ease-in-out"
+              className="block w-full h-[500px] object-cover bg-black bg-opacity-50 transition-opacity duration-1000 ease-in-out"
               alt={`Slide ${index + 1}`}
             />
 
@@ -65,7 +65,7 @@ const Carousel = () => {
               className={`absolute 
                 top-1/2 sm:top-1/2 md:top-36 
                 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
-                text-[#202559] font-bold 
+                text-black font-bold 
                 text-2xl sm:text-3xl md:text-4xl lg:text-5xl 
                 text-center transition-all duration-1000 
                 ${index === currentIndex ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}

@@ -15,15 +15,22 @@ function OurMissionVision() {
                     <hr className="my-2 border-[#ffd838]" />
                     <div className=" text-center md:text-left">
                         <p className="text-gray-700  leading-relaxed">
-                            To be the foremost provider of innovative, end-to-end supply chain solutions,
-                            delivering exceptional value through ethical practices,
-                            continuous innovation, and a dedicated team, all aimed at achieving unparalleled customer satisfaction.
+                            Indumove Engineering strives to be a
+                            leading provider of innovative and reliable
+                            engineering solutions, specializing in PEB
+                            manufacturing, supply chain and logistics
+                            support, piping installation, structural and
+                            heavy fabrication, and packaging solutions.
+                            We aim to set industry benchmarks through
+                            quality, efficiency, and ethical business
+                            practices, ensuring long-term value for our
+                            clients and stakeholders.
                         </p>
                     </div>
                 </div>
 
 
-                <div className="md:w-1/3 flex justify-center top-0 ">
+                <div className="hidden  md:w-1/3 md:flex justify-center top-0 ">
                     <img
                         src={imgvision}
                         alt="vision"
@@ -53,9 +60,17 @@ function OurMissionVision() {
                     </h2>
                     <hr className="my-2 border-[#ffd838]" />
                     <p className="text-gray-700 leading-relaxed">
-                        As specialists in comprehensive supply chain management, we empower our customers
-                        by managing their end-to-end logistics with expertise and reliability. This allows them to focus on
-                        their core business while we optimize their supply chain for enhanced efficiency and growth.
+                        we are committed to delivering high-quality,
+                        efficient solutions across various industrial
+                        domains. Through advanced technology,
+                        skilled expertise, and a customer-centric
+                        approach, we optimize operational
+                        efficiency and enhance productivity in PEB
+                        manufacturing, logistics, fabrication, and
+                        packaging. Our mission is to empower
+                        industries with tailored engineering
+                        solutions that drive growth, sustainability,
+                        and excellence
                     </p>
                 </div>
             </div>
