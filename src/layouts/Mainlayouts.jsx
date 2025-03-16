@@ -2,6 +2,7 @@ import { Outlet } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Footer from '../components/layouts/Footer/Footer';
 import Navbar from '../components/layouts/Navbar/Navbar';
+import { Analytics } from "@vercel/analytics/react"
 import Loader from '../components/Loader/Loader';
 function Mainlayouts() {
     const [loading, setLoading] = useState(true);
@@ -19,7 +20,7 @@ function Mainlayouts() {
             <main>
                 
                     <Outlet />
-               
+                    <Analytics />
             </main >
             <Footer />
         </div>
