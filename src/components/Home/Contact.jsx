@@ -166,7 +166,7 @@ export default function Contact() {
                                 </Card>
                             ))}
                         </div>
-                        <AdComponent />
+                        {/* <AdComponent /> */}
                     </div>
                 </div>
             </div>

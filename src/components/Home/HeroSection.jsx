@@ -20,7 +20,7 @@ function HeroSection() {
     return (
         <div id="home" className=" w-full lg:h-[600px]  overflow-hidden pt-16 top-0">
             <Carousel />
-            <AdComponent />
+            {/* <AdComponent /> */}
         </div>
         
         

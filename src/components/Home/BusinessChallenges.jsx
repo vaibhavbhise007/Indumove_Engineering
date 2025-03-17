@@ -71,7 +71,7 @@ function BusinessChallenges() {
             alt="Business Challenges"
             className="object-cover w-full h-full max-h-[400px] md:max-h-[500px] lg:max-h-[600px] rounded-lg shadow-lg"
           />
-          <AdComponent />
+          {/* <AdComponent /> */}
         </div>
       </div>
     </section>

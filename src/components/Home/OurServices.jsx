@@ -44,7 +44,7 @@ function OurServices() {
                         </div>
                     </div>
                 ))}
-                <AdComponent />
+                {/* <AdComponent /> */}
             </div>
         </section>
     );
