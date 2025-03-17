@@ -21,6 +21,7 @@ function Mainlayouts() {
                 
                     <Outlet />
                     <Analytics />
+                    
             </main >
             <Footer />
         </div>
