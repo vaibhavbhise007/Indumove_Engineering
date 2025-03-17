@@ -9,8 +9,9 @@ function Footer() {
           {/* Address Section */}
           <div>
             <h3 className="text-xl font-semibold mb-4 text-sky-400">Address</h3>
-            <p>Gat no.263, MIDC Rd, near to a Raymond Fasteners India Pvt. Ltd., near Mercedes Benz, Phase III, Industrial Area, </p>
-            <p>Chakan, Pune, Maharashtra 410501,</p>
+            <p>Indumove Engineering,
+            Medankarwadi, Alandi Phata, near ASAL automotive stamping & assembly  Ltd, </p>
+            <p>Chakan - Alandi Rd, Pune, Maharashtra 411039,</p>
             <p>India</p>
           </div>
 

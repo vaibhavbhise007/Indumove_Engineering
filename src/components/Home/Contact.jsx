@@ -139,7 +139,7 @@ export default function Contact() {
                                 {
                                     icon: <MapPin className="h-6 w-6 text-[#C5A572] mr-4" />,
                                     title: "Address",
-                                    text: "Gat no.263, MIDC Rd, near to a Raymond Fasteners India Pvt. Ltd., near Mercedes Benz, Phase III, Industrial Area,Chakan, Pune, Maharashtra 410501, India",
+                                    text: "Indumove Engineering, Medankarwadi, Alandi Phata, near ASAL automotive stamping & assembly  Ltd, Chakan - Alandi Rd, Pune, Maharashtra 411039",
                                 },
                                 {
                                     icon: <Phone className="h-6 w-6 text-[#C5A572] mr-4" />,
