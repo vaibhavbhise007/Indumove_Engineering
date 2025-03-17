@@ -3,6 +3,7 @@ import { Input } from "../../components/ui/Input";
 import { Textarea } from "../../components/ui/Textarea";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { useState } from "react";
+import AdComponent from "../AdSense/AdComponent";
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -165,6 +166,7 @@ export default function Contact() {
                                 </Card>
                             ))}
                         </div>
+                        <AdComponent />
                     </div>
                 </div>
             </div>

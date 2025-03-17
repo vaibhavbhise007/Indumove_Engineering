@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Carousel from "../../components/ui/Carousel";
+import AdComponent from '../AdSense/AdComponent';
 
 
 
@@ -19,7 +20,10 @@ function HeroSection() {
     return (
         <div id="home" className=" w-full lg:h-[600px]  overflow-hidden pt-16 top-0">
             <Carousel />
+            <AdComponent />
         </div>
+        
+        
     );
 }
 

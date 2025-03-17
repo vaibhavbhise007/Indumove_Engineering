@@ -7,6 +7,7 @@ import s5 from '../../assets/herosection/s5.jpg';
 import s6 from '../../assets/herosection/s6.jpg';
 import s7 from '../../assets/herosection/s7.jpg';
 import s8 from '../../assets/herosection/s8.jpg';
+import AdComponent from '../AdSense/AdComponent';
 
 const services = [
     { img: s1, title: "Design And Development" },
@@ -43,6 +44,7 @@ function OurServices() {
                         </div>
                     </div>
                 ))}
+                <AdComponent />
             </div>
         </section>
     );

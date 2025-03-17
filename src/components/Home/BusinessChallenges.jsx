@@ -3,6 +3,7 @@ import img1 from "../../assets/b1.jpg";
 import img2 from "../../assets/b2.jpg";
 import img3 from "../../assets/b3.jpg";
 import img4 from "../../assets/b4.png";
+import AdComponent from "../AdSense/AdComponent";
 
 function BusinessChallenges() {
   const [selectedImage, setSelectedImage] = useState(img1); // Default image
@@ -70,6 +71,7 @@ function BusinessChallenges() {
             alt="Business Challenges"
             className="object-cover w-full h-full max-h-[400px] md:max-h-[500px] lg:max-h-[600px] rounded-lg shadow-lg"
           />
+          <AdComponent />
         </div>
       </div>
     </section>
