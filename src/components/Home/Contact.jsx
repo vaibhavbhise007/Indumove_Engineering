@@ -59,7 +59,7 @@ export default function Contact() {
                                         <Input
                                             required
                                             type="text"
-                                            placeholder="John"
+                                            placeholder="ABC"
                                             name="firstName"
                                             value={formData.firstName}
                                             onChange={handleChange}
@@ -72,7 +72,7 @@ export default function Contact() {
                                         <Input
                                             required
                                             type="text"
-                                            placeholder="Doe"
+                                            placeholder="XYZ"
                                             name="lastName"
                                             value={formData.lastName}
                                             onChange={handleChange}
@@ -85,7 +85,7 @@ export default function Contact() {
                                     </label>
                                     <Input
                                         type="email"
-                                        placeholder="john@example.com"
+                                        placeholder="abc@example.com"
                                         name="email"
                                         value={formData.email}
                                         onChange={handleChange}
